@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Biaya — Global education</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .navbar-page .nav-logo-img {
+      width: 60px !important;
+      height: 60px !important;
+    }
+    .navbar-page .nav-logo span {
+      font-size: 11px !important;
+    }
+    .navbar-page {
+      padding: 10px 40px !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Mobile Nav Overlay -->
+  <div class="nav-mobile-overlay" id="navMobileOverlay">
+    <button class="nav-mobile-close" id="navMobileClose" aria-label="Tutup menu">&#x2715;</button>
+    <a href="index.html" onclick="closeNav()">BERANDA</a>
+    <a href="about.html" onclick="closeNav()">TENTANG</a>
+    <a href="program.html" onclick="closeNav()">PROGRAM</a>
+    <a href="biaya.html" onclick="closeNav()">BIAYA</a>
+    <a href="testimoni.html" onclick="closeNav()">TESTIMONI</a>
+    <a href="peserta.html" onclick="closeNav()">PESERTA UJIAN</a>
+    <a href="contact.html" onclick="closeNav()">KONTAK</a>
+  </div>
+
+
+  <!-- ============== NAVBAR ============== -->
+  <nav class="navbar-page">
+      <div class="nav-left">
+      <a href="index.html">BERANDA</a>
+      <a href="about.html">TENTANG</a>
+      <a href="program.html">PROGRAM</a>
+      <a href="biaya.html">BIAYA</a>
+      </div>
+
+    <a href="index.html" class="nav-logo">
+      <img src="Gemini_Generated_Image_jkyukjkyukjkyukj (1)-Photoroom.png" alt="Logo" class="nav-logo-img"/>
+      <span>GlobalEducation</span>
+    </a>
+
+      <div class="nav-right">
+        <a href="testimoni.html">TESTIMONI</a>
+        <a href="peserta.html">PESERTA UJIAN</a>
+        <a href="contact.html">KONTAK</a>
+      </div>
+    </nav>
+  </nav>
+
+  <!-- ============== HERO BIAYA ============== -->
+  <section class="biaya-hero">
+    <div class="biaya-hero-left">
+      <h1>Biaya Kursus</h1>
+      <p>Estimasi biaya kursus berdasarkan program,<br>lembaga, dan metode pembelajaran.</p>
+    </div>
+    <div class="biaya-hero-right">
+      <span class="deco deco-circle-outline top-right-1">&#9675;</span>
+      <span class="deco deco-plus top-right-2">+</span>
+      <span class="deco deco-circle-fill top-right-3">&#9679;</span>
+      <span class="deco deco-plus top-right-4">+</span>
+      <div class="biaya-illustration">
+        <svg viewBox="0 0 300 210" xmlns="http://www.w3.org/2000/svg" width="300" height="210">
+          <!-- Soft background circle -->
+          <ellipse cx="150" cy="130" rx="130" ry="75" fill="#d8e4f7" opacity="0.5"/>
+          <!-- Desk -->
+          <rect x="40" y="165" width="220" height="8" rx="4" fill="#b0bec5"/>
+          <rect x="60" y="173" width="8" height="24" rx="3" fill="#b0bec5"/>
+          <rect x="232" y="173" width="8" height="24" rx="3" fill="#b0bec5"/>
+          <!-- Calculator -->
+          <rect x="55" y="115" width="52" height="58" rx="6" fill="#ffffff" stroke="#c5cce8" stroke-width="1.5"/>
+          <rect x="60" y="120" width="42" height="14" rx="3" fill="#d0d8f0"/>
+          <text x="81" y="131" text-anchor="middle" font-size="9" fill="#7b89bf" font-weight="bold">123</text>
+          <rect x="61" y="138" width="11" height="9" rx="2" fill="#e8ecf8"/>
+          <rect x="75" y="138" width="11" height="9" rx="2" fill="#e8ecf8"/>
+          <rect x="89" y="138" width="11" height="9" rx="2" fill="#e8ecf8"/>
+          <rect x="61" y="150" width="11" height="9" rx="2" fill="#e8ecf8"/>
+          <rect x="75" y="150" width="11" height="9" rx="2" fill="#e8ecf8"/>
+          <rect x="89" y="150" width="11" height="9" rx="2" fill="#7b89bf"/>
+          <rect x="61" y="162" width="39" height="9" rx="2" fill="#e07b5f" opacity="0.8"/>
+          <!-- Price tag / document stack -->
+          <rect x="125" y="90" width="90" height="75" rx="6" fill="#ffffff" stroke="#c5cce8" stroke-width="1.5"/>
+          <rect x="131" y="97" width="78" height="6" rx="2" fill="#7b89bf"/>
+          <rect x="131" y="108" width="55" height="4" rx="2" fill="#c5cce8"/>
+          <rect x="131" y="116" width="65" height="4" rx="2" fill="#c5cce8"/>
+          <rect x="131" y="124" width="50" height="4" rx="2" fill="#c5cce8"/>
+          <rect x="131" y="132" width="60" height="4" rx="2" fill="#c5cce8"/>
+          <!-- Rupiah sign badge -->
+          <circle cx="193" cy="150" r="12" fill="#f5c542" stroke="#e0a800" stroke-width="1.5"/>
+          <text x="193" y="154" text-anchor="middle" font-size="12" fill="#b8860b" font-weight="bold">Rp</text>
+          <!-- Coin stack right -->
+          <ellipse cx="255" cy="163" rx="18" ry="5" fill="#f5c542"/>
+          <rect x="237" y="150" width="36" height="13" rx="2" fill="#f5c542"/>
+          <ellipse cx="255" cy="150" rx="18" ry="5" fill="#ffd966"/>
+          <ellipse cx="255" cy="143" rx="18" ry="5" fill="#f5c542"/>
+          <rect x="237" y="130" width="36" height="13" rx="2" fill="#f5c542"/>
+          <ellipse cx="255" cy="130" rx="18" ry="5" fill="#ffd966"/>
+          <!-- Small plant left -->
+          <ellipse cx="40" cy="148" rx="18" ry="10" fill="#6cb8a0" opacity="0.6" transform="rotate(-30 40 148)"/>
+          <ellipse cx="28" cy="138" rx="14" ry="8" fill="#4e9e84" opacity="0.5" transform="rotate(-50 28 138)"/>
+          <rect x="36" y="160" width="10" height="8" rx="2" fill="#c9a96e"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       1. KURSUS BAHASA INGGRIS
+  ============================================================ -->
+  <section class="biaya-section">
+    <div class="biaya-section-header">
+      <div class="section-title-group">
+        <span class="title-line"></span>
+        <span class="title-label">Program 01</span>
+        <span class="title-line"></span>
+      </div>
+      <h2>Kursus Bahasa Inggris</h2>
+      <p>Estimasi biaya kursus bahasa Inggris berdasarkan lembaga dan metode pembelajaran.</p>
+    </div>
+
+    <div class="biaya-grid">
+
+      <div class="biaya-card">
+        <div class="biaya-card-icon">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <rect x="4" y="6" width="36" height="32" rx="4" fill="#e8ecf8" stroke="#7b89bf" stroke-width="1.5"/>
+            <text x="22" y="28" text-anchor="middle" font-size="16" fill="#7b89bf" font-weight="bold" font-family="Georgia,serif">A</text>
+            <rect x="10" y="12" width="24" height="2.5" rx="1" fill="#a0b0d0"/>
+          </svg>
+        </div>
+        <div class="biaya-card-label">Kids &amp; Teens</div>
+        <h3>Global Education Kids &amp; Teens</h3>
+        <div class="biaya-price">Rp5.000.000 – Rp15.000.000</div>
+        <div class="biaya-period">per level</div>
+        <p>Program bahasa Inggris khusus anak-anak dan remaja dengan metode interaktif dan menyenangkan.</p>
+      </div>
+
+      <div class="biaya-card biaya-card-featured">
+        <div class="biaya-card-icon">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <rect x="4" y="6" width="36" height="32" rx="4" fill="#e8ecf8" stroke="#7b89bf" stroke-width="1.5"/>
+            <text x="22" y="28" text-anchor="middle" font-size="14" fill="#7b89bf" font-weight="bold" font-family="Georgia,serif">Aa</text>
+            <rect x="10" y="12" width="24" height="2.5" rx="1" fill="#a0b0d0"/>
+          </svg>
+        </div>
+        <div class="biaya-badge">Populer</div>
+        <h3>Global Education Adults</h3>
+        <div class="biaya-price">Rp10.000.000 – Rp25.000.000</div>
+        <div class="biaya-period">untuk 3–6 bulan</div>
+        <p>Program intensif untuk orang dewasa yang ingin meningkatkan kemampuan bahasa Inggris secara profesional.</p>
+      </div>
+
+      <div class="biaya-card">
+        <div class="biaya-card-icon">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <circle cx="22" cy="22" r="16" fill="#e8ecf8" stroke="#7b89bf" stroke-width="1.5"/>
+            <text x="22" y="27" text-anchor="middle" font-size="13" fill="#7b89bf" font-weight="bold">EN</text>
+          </svg>
+        </div>
+        <h3>TOEFL</h3>
+        <div class="biaya-price">Mulai Rp500.000</div>
+        <div class="biaya-period">untuk sertifikasi TOEFL</div>
+        <p>Pilihan kursus bahasa Inggris terjangkau dengan kurikulum terstruktur.</p>
+      </div>
+
+      <div class="biaya-card">
+        <div class="biaya-card-icon">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <rect x="6" y="8" width="32" height="24" rx="3" fill="#e8ecf8" stroke="#7b89bf" stroke-width="1.5"/>
+            <circle cx="22" cy="20" r="5" fill="none" stroke="#7b89bf" stroke-width="1.5"/>
+            <rect x="16" y="32" width="12" height="5" rx="2" fill="#b0bec5"/>
+            <rect x="10" y="36" width="24" height="3" rx="1" fill="#b0bec5"/>
+          </svg>
+        </div>
+        <h3>Les Privat (Umum)</h3>
+        <div class="biaya-price">Rp100.000 – Rp500.000</div>
+        <div class="biaya-period">per jam</div>
+        <p>Pembelajaran privat tatap muka yang fleksibel, disesuaikan dengan kebutuhan dan jadwal peserta.</p>
+      </div>
+
+      <div class="biaya-card">
+        <div class="biaya-card-icon">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <rect x="4" y="10" width="36" height="24" rx="3" fill="#e8ecf8" stroke="#7b89bf" stroke-width="1.5"/>
+            <rect x="10" y="16" width="24" height="4" rx="2" fill="#a0b0d0"/>
+            <rect x="10" y="24" width="16" height="3" rx="1.5" fill="#c5cce8"/>
+            <line x1="36" y1="8" x2="42" y2="4" stroke="#7b89bf" stroke-width="1.5"/>
+            <circle cx="42" cy="4" r="2" fill="#e07b5f"/>
+          </svg>
+        </div>
+        <h3>TOEIC</h3>
+        <div class="biaya-price">Mulai Rp450.000</div>
+        <div class="biaya-period">Untuk sertifikasi TOEIC</div>
+        <p>Pilihan kursus bahasa Inggris terjangkau dengan kurikulum terstruktur.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       2. KURSUS MICROSOFT
+  ============================================================ -->
+  <section class="biaya-section biaya-section-alt">
+    <div class="biaya-section-header">
+      <div class="section-title-group">
+        <span class="title-line"></span>
+        <span class="title-label">Program 02</span>
+        <span class="title-line"></span>
+      </div>
+      <h2>Kursus Microsoft &amp; Komputer</h2>
+      <p>Estimasi biaya kursus komputer dan Microsoft Office berdasarkan paket dan metode.</p>
+    </div>
+
+    <div class="biaya-grid">
+
+      <div class="biaya-card">
+        <div class="biaya-card-icon">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <rect x="4" y="10" width="36" height="26" rx="3" fill="#e8ecf8" stroke="#7b89bf" stroke-width="1.5"/>
+            <rect x="8" y="14" width="14" height="10" rx="2" fill="#a0b0d0"/>
+            <rect x="24" y="14" width="12" height="4" rx="1.5" fill="#c5cce8"/>
+            <rect x="24" y="21" width="9" height="4" rx="1.5" fill="#c5cce8"/>
+            <rect x="8" y="27" width="28" height="3" rx="1.5" fill="#c5cce8"/>
+          </svg>
+        </div>
+        <h3>MS. Office Dasar / Admin</h3>
+        <div class="biaya-price-range">
+          <div class="price-row"><span class="price-tag">12–24 pertemuan</span><span class="price-val">Rp350.000 – Rp1.800.000</span></div>
+          <div class="price-row"><span class="price-tag">Paket Lengkap</span><span class="price-val">Rp650.000 – Rp2.500.000</span></div>
+        </div>
+        <p>Paket Word, Excel, dan PowerPoint lengkap untuk kebutuhan administrasi dan perkantoran.</p>
+      </div>
+
+      <div class="biaya-card biaya-card-featured">
+        <div class="biaya-card-icon">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <rect x="4" y="6" width="36" height="32" rx="4" fill="#e8ecf8" stroke="#7b89bf" stroke-width="1.5"/>
+            <rect x="10" y="13" width="10" height="10" rx="2" fill="#7b89bf" opacity="0.5"/>
+            <rect x="24" y="13" width="10" height="10" rx="2" fill="#7b89bf"/>
+            <rect x="10" y="27" width="10" height="6" rx="2" fill="#7b89bf" opacity="0.7"/>
+            <rect x="24" y="27" width="10" height="6" rx="2" fill="#7b89bf" opacity="0.3"/>
+          </svg>
+        </div>
+        <div class="biaya-badge">Intensif</div>
+        <h3>Kursus Privat Online</h3>
+        <div class="biaya-price">Rp100.000 – Rp250.000</div>
+        <div class="biaya-period">per jam</div>
+        <p>Belajar komputer dan desain secara privat online dengan pengajar profesional yang berpengalaman.</p>
+      </div>
+
+      <div class="biaya-card">
+        <div class="biaya-card-icon">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <rect x="4" y="10" width="36" height="26" rx="3" fill="#e8ecf8" stroke="#7b89bf" stroke-width="1.5"/>
+            <rect x="8" y="14" width="28" height="14" rx="2" fill="#d0d8f0"/>
+            <rect x="16" y="36" width="12" height="4" rx="2" fill="#b0bec5"/>
+            <rect x="10" y="40" width="24" height="3" rx="1.5" fill="#b0bec5"/>
+            <text x="22" y="25" text-anchor="middle" font-size="9" fill="#7b89bf" font-weight="bold">PC</text>
+          </svg>
+        </div>
+        <h3>Privat Tatap Muka</h3>
+        <div class="biaya-price">&gt; Rp200.000</div>
+        <div class="biaya-period">per jam</div>
+        <p>Kursus privat tatap muka langsung dengan instruktur untuk pembelajaran yang lebih interaktif.</p>
+      </div>
+
+      <div class="biaya-card">
+        <div class="biaya-card-icon">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <circle cx="22" cy="20" r="14" fill="#e8ecf8" stroke="#7b89bf" stroke-width="1.5"/>
+            <text x="22" y="25" text-anchor="middle" font-size="14" fill="#7b89bf">&#128104;</text>
+          </svg>
+        </div>
+        <h3>Kursus Komputer Anak</h3>
+        <div class="biaya-price">Rp1.500.000 – Rp3.000.000</div>
+        <div class="biaya-period">per paket</div>
+        <p>Program komputer khusus anak dengan pendekatan bermain sambil belajar yang menyenangkan.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       3. KURSUS AKUNTANSI
+  ============================================================ -->
+  <section class="biaya-section">
+    <div class="biaya-section-header">
+      <div class="section-title-group">
+        <span class="title-line"></span>
+        <span class="title-label">Program 03</span>
+        <span class="title-line"></span>
+      </div>
+      <h2>Kursus Akuntansi</h2>
+      <p>Estimasi biaya kursus akuntansi dari level dasar hingga sertifikasi profesional.</p>
+    </div>
+
+    <div class="biaya-grid">
+
+      <div class="biaya-card">
+        <div class="biaya-card-icon">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <rect x="4" y="6" width="36" height="32" rx="4" fill="#e8ecf8" stroke="#7b89bf" stroke-width="1.5"/>
+            <line x1="22" y1="10" x2="22" y2="34" stroke="#a0b0d0" stroke-width="1"/>
+            <line x1="8" y1="22" x2="36" y2="22" stroke="#a0b0d0" stroke-width="1"/>
+            <rect x="10" y="12" width="10" height="8" rx="1" fill="#7b89bf" opacity="0.3"/>
+            <rect x="24" y="12" width="10" height="8" rx="1" fill="#7b89bf" opacity="0.6"/>
+            <rect x="10" y="24" width="10" height="8" rx="1" fill="#7b89bf" opacity="0.6"/>
+            <rect x="24" y="24" width="10" height="8" rx="1" fill="#7b89bf"/>
+          </svg>
+        </div>
+        <h3>Pelatihan Akuntansi Dasar</h3>
+        <div class="biaya-price-range">
+          <div class="price-row"><span class="price-tag">Online</span><span class="price-val">Rp2.000.000</span></div>
+          <div class="price-row"><span class="price-tag">Offline</span><span class="price-val">Rp2.200.000</span></div>
+        </div>
+        <p>Pelatihan akuntansi fundamental mencakup pembukuan, jurnal, buku besar, dan laporan keuangan.</p>
+      </div>
+
+      <div class="biaya-card">
+        <div class="biaya-card-icon">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <rect x="4" y="10" width="36" height="24" rx="3" fill="#e8ecf8" stroke="#7b89bf" stroke-width="1.5"/>
+            <rect x="8" y="14" width="28" height="14" rx="2" fill="#d0d8f0"/>
+            <text x="22" y="25" text-anchor="middle" font-size="9" fill="#7b89bf" font-weight="bold">ACC</text>
+          </svg>
+        </div>
+        <h3>Les Privat Akuntansi</h3>
+        <div class="biaya-price">Rp51.572 – Rp72.460</div>
+        <div class="biaya-period">per jam (Superprof)</div>
+        <p>Kursus privat akuntansi online terjangkau melalui Superprof, tergantung lokasi dan pengajar.</p>
+      </div>
+
+      <div class="biaya-card biaya-card-featured">
+        <div class="biaya-card-icon">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <rect x="6" y="6" width="32" height="32" rx="4" fill="#e8ecf8" stroke="#7b89bf" stroke-width="1.5"/>
+            <rect x="11" y="13" width="22" height="3" rx="1.5" fill="#7b89bf"/>
+            <rect x="11" y="19" width="16" height="2.5" rx="1" fill="#a0b0d0"/>
+            <rect x="11" y="25" width="20" height="2.5" rx="1" fill="#a0b0d0"/>
+            <rect x="11" y="31" width="12" height="2.5" rx="1" fill="#a0b0d0"/>
+            <rect x="28" y="19" width="6" height="14" rx="2" fill="#f5c542" opacity="0.8"/>
+          </svg>
+        </div>
+        <div class="biaya-badge">Populer</div>
+        <h3>Pelatihan Perpajakan (Brevet)</h3>
+        <div class="biaya-price">&#177; Rp3.000.000</div>
+        <div class="biaya-period">per program</div>
+        <p>Pelatihan brevet pajak yang mempersiapkan peserta menjadi tenaga ahli perpajakan bersertifikat.</p>
+      </div>
+
+      <div class="biaya-card">
+        <div class="biaya-card-icon">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <rect x="4" y="8" width="36" height="28" rx="3" fill="#e8ecf8" stroke="#7b89bf" stroke-width="1.5"/>
+            <rect x="8" y="13" width="6" height="16" rx="1" fill="#7b89bf" opacity="0.4"/>
+            <rect x="17" y="19" width="6" height="10" rx="1" fill="#7b89bf" opacity="0.6"/>
+            <rect x="26" y="16" width="6" height="13" rx="1" fill="#7b89bf" opacity="0.8"/>
+          </svg>
+        </div>
+        <h3>Kursus MS. Excel Akuntansi</h3>
+        <div class="biaya-price">Rp1.250.000 – Rp2.500.000</div>
+        <div class="biaya-period">per paket</div>
+        <p>Penguasaan Microsoft Excel khusus kebutuhan akuntansi, termasuk formula dan pembuatan laporan.</p>
+      </div>
+
+      <div class="biaya-card">
+        <div class="biaya-card-icon">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <rect x="4" y="6" width="36" height="32" rx="4" fill="#e8ecf8" stroke="#7b89bf" stroke-width="1.5"/>
+            <circle cx="22" cy="26" r="8" fill="none" stroke="#7b89bf" stroke-width="1.5"/>
+            <rect x="16" y="12" width="12" height="3" rx="1.5" fill="#a0b0d0"/>
+            <text x="22" y="30" text-anchor="middle" font-size="8" fill="#7b89bf" font-weight="bold">CPA</text>
+          </svg>
+        </div>
+        <h3>Sertifikasi Dasar (CPA)</h3>
+        <div class="biaya-price">Rp200.000</div>
+        <div class="biaya-period">per modul</div>
+        <p>Sertifikasi dasar akuntansi per modul yang fleksibel untuk pengembangan kompetensi bertahap.</p>
+      </div>
+
+      <div class="biaya-card">
+        <div class="biaya-card-icon">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <rect x="6" y="4" width="32" height="36" rx="4" fill="#e8ecf8" stroke="#7b89bf" stroke-width="1.5"/>
+            <rect x="12" y="12" width="20" height="3" rx="1.5" fill="#7b89bf"/>
+            <rect x="12" y="18" width="15" height="2.5" rx="1" fill="#a0b0d0"/>
+            <rect x="12" y="24" width="18" height="2.5" rx="1" fill="#a0b0d0"/>
+            <rect x="12" y="30" width="12" height="2.5" rx="1" fill="#a0b0d0"/>
+          </svg>
+        </div>
+        <h3>Program Studi Akuntansi (LP3I)</h3>
+        <div class="biaya-price">&#177; Rp4.500.000</div>
+        <div class="biaya-period">uang pangkal (perkiraan)</div>
+        <p>Program studi akuntansi di LP3I dengan kurikulum terstruktur dan pengakuan lembaga resmi.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       4. KURSUS PERPAJAKAN
+  ============================================================ -->
+  <section class="biaya-section biaya-section-alt">
+    <div class="biaya-section-header">
+      <div class="section-title-group">
+        <span class="title-line"></span>
+        <span class="title-label">Program 04</span>
+        <span class="title-line"></span>
+      </div>
+      <h2>Kursus Perpajakan (Brevet A &amp; B, C)</h2>
+      <p>Rincian biaya kursus perpajakan Brevet A&amp;B dari berbagai lembaga penyelenggara.</p>
+    </div>
+
+    <div class="biaya-grid">
+
+      <div class="biaya-card">
+        <div class="biaya-card-icon">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <rect x="4" y="10" width="36" height="24" rx="3" fill="#e8ecf8" stroke="#7b89bf" stroke-width="1.5"/>
+            <rect x="8" y="14" width="28" height="14" rx="2" fill="#d0d8f0"/>
+            <rect x="12" y="18" width="20" height="3" rx="1" fill="#a0b0d0"/>
+            <rect x="12" y="24" width="14" height="2" rx="1" fill="#c5cce8"/>
+            <line x1="38" y1="8" x2="44" y2="4" stroke="#7b89bf" stroke-width="1.5"/>
+            <circle cx="44" cy="4" r="2" fill="#e07b5f"/>
+          </svg>
+        </div>
+        <h3>Lembaga Global education</h3>
+        <div class="biaya-price">Mulai Rp1.499.000</div>
+        <div class="biaya-period">paket intensif</div>
+        <p>Paket intensif brevet pajak dari lembaga pelatihan swasta dan platform online terpercaya.</p>
+      </div>
+
+      <div class="biaya-card">
+        <div class="biaya-card-icon">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <circle cx="22" cy="22" r="16" fill="#e8ecf8" stroke="#7b89bf" stroke-width="1.5"/>
+            <circle cx="22" cy="17" r="5" fill="none" stroke="#7b89bf" stroke-width="1.5"/>
+            <path d="M12 34 Q22 28 32 34" fill="none" stroke="#7b89bf" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <h3>Privat (Superprof)</h3>
+        <div class="biaya-price">Bervariasi</div>
+        <div class="biaya-period">tarif per jam</div>
+        <p>Les privat perpajakan secara online melalui Superprof dengan fleksibilitas waktu dan harga.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CATATAN BIAYA ============== -->
+  <section class="biaya-note-section">
+    <div class="biaya-note-card">
+      <div class="section-title-group">
+        <span class="title-line"></span>
+        <span class="title-label">Informasi Penting</span>
+        <span class="title-line"></span>
+      </div>
+      <h3>Catatan Mengenai Estimasi Biaya</h3>
+      <p>
+        Seluruh harga yang tercantum merupakan <strong>estimasi</strong> waktu yang 
+        terkait. Biaya aktual dapat berbeda tergantung jadwal dan kondisi. Untuk informasi biaya yang paling akurat dan terkini, silakan hubungi
+        kami langsung atau kunjungi lembaga terkait.
+      </p>
+<a href="contact.html" class="btn-navy biaya-cta">Hubungi Kami</a>
+    </div>
+  </section>
+
+   <!-- ============== FOOTER ============== -->
+  <footer>
+    <div class="footer-inner">
+
+<!-- Brand -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="Gemini_Generated_Image_jkyukjkyukjkyukj (1)-Photoroom.png" alt="Footer Logo" class="footer-logo-img"/>
+          <span>GlobalEducation</span>
+        </div>
+        <div class="footer-address">
+          Jl jetis wetan no 94, Surabaya
+        </div>
+        <div class="footer-email">
+          <a href="/cdn-cgi/l/email-protection#563332233537223f3938313a3934373a626416313b373f3a7835393b" class="footer-email-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="4" width="20" height="16" rx="2" stroke="white" stroke-width="1.5"/>
+              <path d="M2 7L12 13L22 7" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span><span class="__cf_email__" data-cfemail="1a7f7e6f797b6e7375747d7675787b762e285a7d777b737634797577">[email&#160;protected]</span></span>
+          </a>
+        </div>
+        <div class="footer-copyright">
+          &copy; 2026 Global Education. All rights reserved.
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/profile.php?id=100009102669054&rdid=kj2BRJtQKEd0vVl0&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16SY9FTzUg%2F#" target="_blank" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://wa.me/6281232943877" target="_blank" aria-label="WhatsApp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Spacer -->
+      <div></div>
+
+      <!-- Col 1 -->
+      <div class="footer-col">
+        <a href="about.html">Tentang</a>
+        <a href="program.html">Program</a>
+        <a href="biaya.html">Biaya</a>
+      </div>
+
+      <!-- Col 2 -->
+      <div class="footer-col">
+        <a href="testimoni.html">Testimoni</a>
+        <a href="peserta.html">Peserta ujian</a>
+        <a href="contact.html">Kontak</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom
