@@ -1,0 +1,599 @@
+/* ============================================================
+   KENTWOOD ACADEMY — style.css (Responsive Fixed)
+   ============================================================ */
+
+/* ----- RESET & BASE ----- */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --navy: #0d1b4b;
+  --navy-light: #1a2a6c;
+  --white: #ffffff;
+  --light-bg: #f0f2f8;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: var(--navy);
+  background: #ffffff;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* ============================================================
+   NAVBAR
+   ============================================================ */
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  transition: all 0.3s ease;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+.nav-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav-logo-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.nav-logo svg {
+  width: 2.75rem;
+  height: 3.25rem;
+  filter: brightness(0) invert(1);
+}
+
+.nav-logo span {
+  color: white;
+  font-size: 0.8125rem;
+  letter-spacing: 0.15em;
+  margin-top: 0.25rem;
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+#hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 40, 70, 0.18);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  padding: 0 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-content h1 {
+  font-family: 'EB Garamond', serif;
+  font-size: clamp(2rem, 8vw, 4.5rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 0.025em;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1rem;
+}
+
+.hero-scroll {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.hero-scroll span {
+  display: block;
+  font-size: 0.8125rem;
+  letter-spacing: 0.125em;
+  margin-bottom: 0.375rem;
+}
+
+.hero-scroll .arrow-down {
+  font-size: 1.25rem;
+  display: block;
+  animation: bounce 1.8s infinite;
+}
+
+/* ============================================================
+   SECTIONS & GRIDS (Mobile-first)
+   ============================================================ */
+.section-padding {
+  padding: 3rem 1.25rem;
+}
+
+.grid-section2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-headteacher {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  order: 1;
+}
+
+.card-headteacher img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-headteacher-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(10, 20, 70, 0.92) 0%, rgba(10, 20, 70, 0.5) 60%, transparent 100%);
+  padding: 2rem 1.5rem;
+  color: white;
+}
+
+.card-headteacher-overlay h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: clamp(1.5rem, 5vw, 1.75rem);
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+}
+
+.card-headteacher-overlay p {
+  font-size: clamp(0.875rem, 3vw, 0.875rem);
+  line-height: 1.6;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.card-visit {
+  background: var(--navy);
+  border-radius: 1rem;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  order: 2;
+}
+
+.card-visit h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: clamp(1.5rem, 5vw, 1.75rem);
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+}
+
+.card-visit p {
+  font-size: clamp(0.875rem, 3vw, 0.875rem);
+  line-height: 1.6;
+  opacity: 0.88;
+  flex: 1;
+}
+
+.grid-section2-bottom {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  max-width: 1200px;
+  margin: 1.25rem auto 0;
+}
+
+.card-ethos {
+  background: var(--light-bg);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.card-ethos h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: clamp(1.5rem, 5vw, 1.875rem);
+  font-weight: 400;
+  color: var(--navy);
+  margin-bottom: 0.875rem;
+}
+
+.card-ethos p {
+  font-size: clamp(0.875rem, 3vw, 0.875rem);
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 1.25rem;
+}
+
+.card-students {
+  border-radius: 1rem;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+}
+
+.card-students img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Generic 3-col card grids (biaya-grid, sertifikat-grid, etc.) */
+.sertifikat-grid,
+.biaya-grid,
+.testi-grid,
+.kontak-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sert-card,
+.biaya-card,
+.testi-card,
+.kontak-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 1.75rem;
+  box-shadow: 0 0.125rem 0.75rem rgba(13, 27, 75, 0.08);
+}
+
+/* Page hero sections (tentang-hero, biaya-hero, etc.) */
+.tentang-hero, .prog-hero, .biaya-hero, .testi-hero, .kontak-hero, .peserta-hero {
+  background: #e8ecf8;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1.25rem 2rem;
+  min-height: 280px;
+  margin-top: 4rem;
+}
+
+.page-hero-left {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-hero-left h1 {
+  font-size: clamp(1.75rem, 8vw, 3rem);
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.875rem;
+}
+
+.page-hero-left p {
+  font-size: clamp(0.875rem, 4vw, 0.9375rem);
+  color: #5a6a90;
+}
+
+/* Section headers */
+.section-header, .biaya-section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.section-header h2, .biaya-section-header h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: clamp(1.75rem, 6vw, 2rem);
+  font-weight: 400;
+  color: var(--navy);
+  margin: 0.875rem 0;
+}
+
+/* Cards padding/content scaling */
+.cefr-card, .legalitas-card, .biaya-note-card, .testi-cta-card {
+  background: #f7f8fc;
+  border-radius: 1rem;
+  padding: clamp(2rem, 8vw, 4rem);
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Footer */
+footer {
+  background: var(--navy);
+  color: white;
+  padding: 3rem 1.25rem 2rem;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 1.75rem auto 0;
+  text-align: center;
+  font-size: 0.8125rem;
+  opacity: 0.6;
+}
+
+/* ============================================================
+   TABLET & DESKTOP
+   ============================================================ */
+@media (min-width: 769px) {
+  nav {
+    padding: 1rem 3rem;
+  }
+  
+  .nav-left,
+  .nav-right {
+    gap: 1.75rem;
+  }
+  
+  .nav-logo-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Hero */
+  #hero {
+    flex-direction: row;
+  }
+
+  .hero-content {
+    padding: 0 3rem;
+  }
+
+  /* Sections */
+  .section-padding {
+    padding: 4rem 3rem;
+  }
+
+  /* 2-column grids */
+  .grid-section2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 1.25rem;
+  }
+  
+  .card-headteacher {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    aspect-ratio: auto;
+    min-height: 30rem;
+  }
+
+  .card-visit {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .card-admissions-row {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .grid-section2-bottom {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 1.25rem;
+  }
+
+  /* Page hero 2-col */
+  .tentang-hero, .prog-hero, .biaya-hero, .testi-hero, .kontak-hero, .peserta-hero {
+    flex-direction: row;
+    padding: 4rem 5rem 2rem 6rem;
+    margin-top: 4.5rem;
+  }
+
+  .page-hero-left {
+    margin-bottom: 0;
+  }
+
+  .page-hero-right {
+    flex-shrink: 0;
+    width: 20rem;
+  }
+
+  /* Cards */
+  .sertifikat-grid,
+  .biaya-grid,
+  .testi-grid,
+  .kontak-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/* ============================================================
+   DESKTOP (>1024px)
+   ============================================================ */
+@media (min-width: 1025px) {
+  nav {
+    padding: 1.125rem 2.5rem;
+  }
+
+  .nav-left,
+  .nav-right {
+    gap: 1.75rem;
+  }
+
+  .nav-logo-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .section-padding {
+    padding: 4rem 5rem;
+  }
+
+  /* Full 3-column grids */
+  .sertifikat-grid,
+  .biaya-grid,
+  .testi-grid,
+  .kontak-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* Section 2 desktop */
+  .grid-section2 {
+    gap: 1.25rem;
+  }
+
+  .card-headteacher {
+    min-height: 480px;
+  }
+
+  .card-visit {
+    padding: 2.25rem 2.25rem 1.875rem;
+  }
+
+  /* Footer */
+  .footer-inner {
+    grid-template-columns: auto 1fr auto auto auto;
+    gap: 3.75rem;
+  }
+
+  .footer-bottom {
+    justify-content: flex-end;
+  }
+
+  /* Original paddings restored */
+  #section2 { padding: 60px 80px; }
+  footer { padding: 52px 80px 36px; }
+  
+  .s3-text-right, .s3-text-left {
+    padding: 3.75rem 3.75rem;
+  }
+}
+
+/* ============================================================
+   MOBILE NAVBAR ENHANCEMENT (≤480px)
+   ============================================================ */
+@media (max-width: 480px) {
+  nav {
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .nav-left,
+  .nav-right {
+    gap: 0.75rem;
+    font-size: 0.8125rem;
+  }
+  
+  .nav-logo-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .hero-scroll {
+    bottom: 1rem;
+  }
+}
+
+/* ============================================================
+   BUTTONS (Responsive)
+   ============================================================ */
+.btn-outline-white, .btn-navy, .btn-outline-white-sm {
+  display: inline-block;
+  padding: clamp(0.625rem, 2vw, 0.625rem) clamp(1.375rem, 3vw, 1.375rem);
+  border-radius: 1.875rem;
+  font-size: clamp(0.8125rem, 2.5vw, 0.8125rem);
+  letter-spacing: 0.025em;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.btn-outline-white:hover,
+.btn-navy:hover {
+  transform: translateY(-0.125rem);
+}
+
+/* ============================================================
+   UTILITY CLASSES
+   ============================================================ */
+.text-center { text-align: center; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animations (unchanged) */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(7px); }
+}
